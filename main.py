@@ -1,23 +1,6 @@
-w = 2
-r = 6
-print((w<r)and(r<w))
-print((w>r)and(r<w))
-print((w<r)and(r>w))
-print((w<r)and(r<w + 6))
-print ("переменные")
-print((w<r)or(r<w))
-print((w<r)or(r>w))
-print((w>r)or(r<w))
-print((w>r)or(98865+r<w))
-print("текст с and")
-t = "памагите"
-u = "ъуъ"
-print((t==u)and(t==u))
-print((u!=t)and(u!=t))
-print((t!=u)and(t!=u))
-print((u==t)and(u==t))
-print("текст с OR")
-print((t==u)or(t==u))
-print((u!=t)or(u!=t))
-print((t!=u)or(t!=u))
-print((u==t)or(u==t))
+year = int(input('Введите год: '))
+
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print('Год високосный')
+else:
+    print('Год невисокосный')
