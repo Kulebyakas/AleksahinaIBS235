@@ -1,6 +1,7 @@
-year = int(input('Введите год: '))
-
-if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
-    print('Год високосный')
-else:
-    print('Год невисокосный')
+n = int(input('ааа: '))
+x = 1
+while True:
+    if x**2 > n:
+        print('натуральное число, квадрат которого больше n: ', x)
+        break
+    x += 1
