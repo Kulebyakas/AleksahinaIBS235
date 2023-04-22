@@ -1,12 +1,19 @@
-a = int(input('введи число: '))
-n = 1
-while True:
-    s = 0
-    for i in range(1, n + 1):
-        s += 1 / i
+E = 0.0001
 
-    if s > a:
-        print('1...', n - 1, sep='')
+s = 0
+x = 1
+flag = 1
+
+while True:
+    if abs(1 / x) < E:
         break
 
-    n += 1
+    if flag == 1:
+        s += 1 / x
+    else:
+        s -= 1/x
+
+    x *= 2
+    flag *= -1
+
+print(s)

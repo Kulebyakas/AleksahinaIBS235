@@ -1,9 +1,12 @@
-a = 200
-b = 17
-while True:
-    a += 1
-    c = a % b
-    if c == 0:
-        break
+E = 0.0001
 
-print("Минимальное число больше 200 и кратное 17 = ", a)
+s = 0
+n = 1
+while True:
+    delta = (2*n-1)/2*n
+    s += delta
+    if delta < E:
+        break
+    n += 1
+    print(delta)
+print(s)
